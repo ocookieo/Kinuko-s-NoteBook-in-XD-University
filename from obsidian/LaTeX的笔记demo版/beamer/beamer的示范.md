@@ -1,4 +1,4 @@
-以下来自经过魔改后的Thu beamer模板
+以下来自经过微改后的Thu beamer模板
 ```latex
 \documentclass[aspectratio=169]{beamer}
 \usepackage{ctex, hyperref}
@@ -8,10 +8,10 @@
 \usepackage{latexsym,amsmath,xcolor,multicol,booktabs,calligra}
 \usepackage{graphicx,pstricks,listings,stackengine}
 
-\author{龚智康}
+\author{author}
 \title{THU Beamer Theme}
 \subtitle{毕业设计开题报告}
-\institute{西安电子科技大学丁香书院}
+\institute{school}
 \date{\today}
 \usepackage{Tsinghua}
 
