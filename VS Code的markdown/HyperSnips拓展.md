@@ -1,5 +1,20 @@
 # HyperSnips 自动扩展
-相比于原来的 HyperSnips, 最大特点是, 它只会在数学环境 <!--$...$, $$...$$, \(...\) 和 \[...\]--> 中自动展开!
+
+原内容请看 知乎作者：一只方橙，GitHub：OrangeX4
+
+这个大佬非常厉害啊，我之前写LaTeX时，用过texstudio，我自己也尝试配置过一些类似的宏定义和JavaScript脚本去加速我的书写，但是没想到的是已经有前人造过轮子了，有现成的轮子就直接用了吧。
+
+这个大佬在知乎上详细地讲解了怎么用VS Code配置Markdown和LaTeX，以及他自己制作的很多插件，按照他的内容自己一点一点配置就好了。
+
+我这里只是为了自己查阅他制作的HyperSnips for math的相关指令而做的笔记。
+
+# 正文
+
+相比于原来的 HyperSnips, 最大特点是, **它只会在数学环境 <!--$...$, $$...$$, \(...\) 和 \[...\]--> 中自动展开!**
+
+$(1+2+3+4+5)$
+
+**调节补全优先级**：打开设置，在搜索中输入editor.snippetSuggestions，然后将选项改为top，就可以了使得插件的优先级最高。
 
 良心提示：占位符可以通过 Tab 键向后跳转和 Shift + Tab 向前跳转。
 ## 数学模式
@@ -50,11 +65,11 @@ dint  =>  \int_{<-\infty>}^{<\infty>} ... \mathrm{d}x
 ```
 ## 括号
 ```
-@(  =>  \left( ... \right)
+@)  =>  \left( ... \right)
 
-@[  =>  \left[ ... \right]
+@]  =>  \left[ ... \right]
 
-@{  =>  \left\{ ... \right\}
+@}  =>  \left\{ ... \right\}
 
 @<  =>  \left< ... \right>
 
@@ -95,16 +110,17 @@ vec2  =>  \begin{pmatrix} ... \\ ... \\\end{pmatrix}
 无限 $\infty$, 极限 $\lim$, 微分 ${\rm d}$, 偏导 $\partial$, 点求导 $\dot{y}$, 点二阶导 $\ddot{y}$, 变化量 $\Delta$, 梯度 $\nabla$.
 横省略 $\cdots$, 竖省略 $\vdots$, 斜省略 $\ddots$.
 常见函数 $\sin$, $\cos$, $\tan$, $\arcsin$, $\arccos$, $\arctan$, $\ln$, $\log$, $\exp$.
+
 ```
 **  =>  \cdot
 xx  =>  \times
-<=  =>  \le
+<=  =>  \le     
 !=  =>  \neq
 ==  =>  \equiv
 ~~  =>  \thickapprox
 sim  =>  \sim
 land  =>  \land
-lor  =>  \lor
+lor  =>  \lor       
 bec  =>  \because
 thr  =>  \therefore
 EE  =>  \exists
@@ -124,6 +140,7 @@ nabla  =>  \nabla
 ...  =>  \cdots
 sin  =>  \sin
 ```
+
 特别重要的数集、向量、矩阵符号
 ```
 RR  =>  \mathbb{R}
