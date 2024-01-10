@@ -1,1 +1,0 @@
-在TeXstudio中，多行注释的快捷键是Ctrl+T，多行取消注释的快捷键是Ctrl+U
